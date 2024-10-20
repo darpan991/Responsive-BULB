@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head> <title>first project</title>
+<link rel="stylesheet" type="text/css" href="first.css">
+</head>
+<body>
+    <div class="main">
+        <nav>
+        <h1>Circle</h1>
+        </nav>
+    </div>
+
+<script>
+var gg = document.querySelector("h1")
+gg.innerHTML = "BULB"
+gg.style.color = "White"
+</script>
+
+<div id="bulb"></div>
+<button>
+    ON
+</button>
+
+<script>
+    var flag = 0
+    var bulb = document.querySelector("#bulb")
+    var btn = document.querySelector("button")
+    btn.addEventListener("click",function(){
+        if(flag == 0){
+            bulb.style.backgroundColor = "yellow"
+            btn.innerHTML = "OFF"
+            console.log("ON")
+            flag = 1
+        }
+        else{bulb.style.backgroundColor = "white"
+            btn.innerHTML = "ON"
+            console.log("OFF")
+            flag = 0}
+    })
+</script>
+</body>
+</html>
